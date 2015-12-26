@@ -1,0 +1,26 @@
+{
+  "name": "simple-grid",
+  "version": "0.0.1",
+  "description": "Simple Responsive grid system for web",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamssurya/simple-grid.git"
+  },
+  "keywords": [
+    "responsive",
+    "grid",
+    "css3",
+    "flex",
+    "columns"
+  ],
+  "author": "Surya S <iamssurya@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamssurya/simple-grid/issues"
+  },
+  "homepage": "https://github.com/iamssurya/simple-grid"
+}

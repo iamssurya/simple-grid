@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900,300,100);
+body{
+	background-color:#111;
+}
+/* Responsive code */
+.container{
+	width : 100%;
+    max-width : 800px; 
+	margin: 20px auto;
+	box-sizing: border-box; 
+}
+
+.form{
+	font-family: 'Lato',sans-serif;
+	color: #ddd;
+}
+.grid-row{
+	width:100%;
+	margin-top: 50px;
+	margin-bottom:50px;
+}
+.grid-row:before, 
+.grid-row:after {
+    content:"";
+    display: table ;
+    clear:both;
+}
+[class*='grid-col-'] {
+    float: left;
+    min-height: 1px; 
+    width: 16.66%; 
+    padding: 3px;
+}
+.grid-col-1{
+    width: 16.66%; 
+}
+.grid-col-2{
+    width: 33.33%; 
+}
+.grid-col-3{
+    width: 50%; 
+}
+.grid-col-4{
+    width: 66.664%;
+}
+.grid-col-5{
+    width: 83.33%;
+}
+.grid-col-6{
+    width: 100%;
+}
+
+@media all and (max-width:800px){
+    .grid-col-1{ width: 33.33%;    }
+    .grid-col-2{ width: 50%;        }
+    .grid-col-3{ width: 83.33%;    }
+    .grid-col-4{ width: 100%;    }
+    .grid-col-5{ width: 100%;    }
+    .grid-col-6{ width: 100%;      }
+
+    .grid-row .grid-col-2:last-of-type{
+        width: 100%; 
+    }
+
+    .grid-row .grid-col-5 ~ .grid-col-1{
+        width: 100%; 
+    }
+}
+@media all and (max-width:650px){
+    .grid-col-1{ width: 50%;        }
+    .grid-col-2{ width: 100%;    }
+    .grid-col-3{ width: 100%;    }
+    .grid-col-4{ width: 100%;    }
+    .grid-col-5{ width: 100%;    }
+    .grid-col-6{ width: 100%;      }
+}
+
+.form-label{
+	font-size: 40px;
+	font-weight:300;
+}
+
+/*Input boxes styling*/
+input[type="text"]{
+	padding:10px;
+	width: 100%;
+	font-family: 'Lato',sans-serif;
+  	font-size: 18px;
+  	border: 0px;
+  	border-bottom: 1px solid #aaa;
+  	background: #111; 
+  	color: #fff;
+  	font-size: 30px;
+  	font-weight:300;
+}
+input[type="text"]:focus{
+	border: 0px;
+	outline: 0;
+	border-bottom: 1px solid #aaa;
+	box-shadow: inset 0px 0px 0px 0 #c9c9c9;
+}
+textarea{
+	outline: 0;
+	background: #111;
+	color:white;
+	font-family: 'Lato',sans-serif;
+	font-size:20px;
+	font-weight: 300;
+	width:100%;
+	border: 2px solid #aaa;
+}
+.submitButton{
+	width:100%;
+	height: 50px;
+	background: black;
+	border: 1px solid white;
+	color:white;
+	font-family: 'Lato',sans-serif;
+	font-size:20px;
+}
+

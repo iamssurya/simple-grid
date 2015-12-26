@@ -1,2 +1,4 @@
-# simple-grid
-Simple grid system for responsive web design
+Simple Responsive Grid
+===
+
+Simple grid system for responsive Web Design
